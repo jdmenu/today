@@ -13,7 +13,7 @@
   </style>
   <style>
        
-    
+    /* 코드를 사용할 때 최초 코드 작성자에게 보고하시길 바랍니다. */
 
         footer {
             text-align: center;
@@ -122,8 +122,8 @@
       const month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
       const day = currentDate.getDate().toString().padStart(2, '0');
       const mealDate = `${year}${month}${day}`;
-      const apiKey = 'a2fdd988b9cb4361a1015f54573bb186'; // Replace with your API key
-      const apiUrl = `https://open.neis.go.kr/hub/mealServiceDietInfo?KEY=${apiKey}&Type=json&pIndex=1&pSize=10&ATPT_OFCDC_SC_CODE=J10&SD_SCHUL_CODE=7530117&MLSV_YMD=${mealDate}`;
+      const apiKey = 'NUBES.KRO.KR'; // api path
+      const apiUrl = `https://open.neis.go.kr/hub/mealServiceDietInfo?KEY=a2fdd988b9cb4361a1015f54573bb186&Type=json&pIndex=1&pSize=10&ATPT_OFCDC_SC_CODE=J10&SD_SCHUL_CODE=7530117&MLSV_YMD=${mealDate}`;
 
       fetch(apiUrl)
         .then(response => response.json())
